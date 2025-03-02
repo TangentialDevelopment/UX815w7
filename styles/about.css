@@ -1,0 +1,9 @@
+.content {
+    background: var(--bg-content);
+    padding: 2rem 7rem;
+    margin: 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}

@@ -1,5 +1,5 @@
 ---
-title: 11ty Boilerplate
+title: Hitchhikers Guide
 ---
 
 <!DOCTYPE html>
@@ -9,14 +9,17 @@ title: 11ty Boilerplate
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="/styles/screen.css">
+  <link rel="stylesheet" href="/styles/nav.css">
+  <link rel="stylesheet" href="/styles/about.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  {% comment %} blog posts written by deepseek. Prompt: a humor blog post about a traveler exploring different worlds and alien cultures. Involve a towel in any story {% endcomment %}
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
-  </nav>
-    {{ content }}
+  {% include 'nav' %}
+  {{ content }}
+  {% include 'footer' %}
 </body>
 </html>
